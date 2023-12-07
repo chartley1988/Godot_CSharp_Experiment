@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3il7a8eq68r3"
-path="res://.godot/imported/playerShip1_blue.png-781545b5574b1ca3ebab9db6c0cd6317.ctex"
+uid="uid://dmowh8ykw8o0"
+path="res://.godot/imported/Blue Nebula 8 - 1024x1024.png-79e948e1b7e8404399458837e2c9973d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/playerShip1_blue.png"
-dest_files=["res://.godot/imported/playerShip1_blue.png-781545b5574b1ca3ebab9db6c0cd6317.ctex"]
+source_file="res://assets/backgrounds/Blue Nebula 8 - 1024x1024.png"
+dest_files=["res://.godot/imported/Blue Nebula 8 - 1024x1024.png-79e948e1b7e8404399458837e2c9973d.ctex"]
 
 [params]
 

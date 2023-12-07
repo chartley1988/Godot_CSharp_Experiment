@@ -62,7 +62,6 @@ public partial class Player : CharacterBody2D
 			new Vector2(Window.X - (spriteSize.X/2),
 			Window.Y - spriteSize.Y)
 		);
-		GD.Print(Position);
 	}
 }
 

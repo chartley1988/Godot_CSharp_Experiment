@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://mey807d2nkny"]
 
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_nctgt"]
 [ext_resource type="Script" path="res://scripts/PlayerInput.cs" id="1_ukk62"]
-[ext_resource type="Script" path="res://Player.cs" id="1_uuur0"]
-[ext_resource type="Texture2D" uid="uid://d3il7a8eq68r3" path="res://assets/playerShip1_blue.png" id="2_8pncl"]
+[ext_resource type="Texture2D" uid="uid://d3il7a8eq68r3" path="res://assets/sprites/playerShip1_blue.png" id="2_67kyj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l7kxf"]
 radius = 32.0156
@@ -10,13 +10,13 @@ radius = 32.0156
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -17)
 motion_mode = 1
-script = ExtResource("1_uuur0")
+script = ExtResource("1_nctgt")
 speed = 1000
 acceleration = 1.0
 friction = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_8pncl")
+texture = ExtResource("2_67kyj")
 
 [node name="Input" type="Node" parent="."]
 script = ExtResource("1_ukk62")
