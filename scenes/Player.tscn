@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://mey807d2nkny"]
+[gd_scene load_steps=6 format=3 uid="uid://mey807d2nkny"]
 
 [ext_resource type="Script" path="res://scripts/Player.cs" id="1_nctgt"]
 [ext_resource type="Script" path="res://scripts/PlayerInput.cs" id="1_ukk62"]
 [ext_resource type="Texture2D" uid="uid://d3il7a8eq68r3" path="res://assets/sprites/playerShip1_blue.png" id="2_67kyj"]
+[ext_resource type="PackedScene" uid="uid://d4itpxj7h634w" path="res://scenes/Gun.tscn" id="4_eyhx7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l7kxf"]
-radius = 32.0156
+radius = 23.0868
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -17)
@@ -16,6 +17,7 @@ acceleration = 1.0
 friction = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_67kyj")
 
 [node name="Input" type="Node" parent="."]
@@ -23,3 +25,8 @@ script = ExtResource("1_ukk62")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_l7kxf")
+
+[node name="SingleCannon" type="Node2D" parent="."]
+
+[node name="Gun" parent="SingleCannon" instance=ExtResource("4_eyhx7")]
+frequency = 4

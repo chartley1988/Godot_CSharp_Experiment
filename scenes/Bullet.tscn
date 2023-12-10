@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr146aqgvegpr"]
+
+[ext_resource type="Script" path="res://scripts/Bullet.cs" id="1_njhf4"]
+[ext_resource type="Texture2D" uid="uid://bdbld3fbnr81a" path="res://assets/sprites/laserRed01.png" id="2_lwfd0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nxp6"]
+size = Vector2(10, 10)
+
+[node name="Bullet" type="CharacterBody2D"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+script = ExtResource("1_njhf4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 21)
+texture = ExtResource("2_lwfd0")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_6nxp6")
+disabled = true
