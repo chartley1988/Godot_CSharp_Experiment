@@ -23,7 +23,6 @@ public partial class ScrollingBackground : Node2D
 		layer1 = (ParallaxBackground)GetNode("ParallaxBackground");
 		layer2 = (ParallaxBackground)GetNode("ParallaxBackground2");
 
-
 		TextureRect1 = 
 		(TextureRect)GetNode(
 			"ParallaxBackground/ParallaxLayer/TextureRect"
@@ -32,9 +31,6 @@ public partial class ScrollingBackground : Node2D
 		(TextureRect)GetNode(
 			"ParallaxBackground2/ParallaxLayer/TextureRect"
 			);
-
-		GD.Print(TextureRect1);
-		GD.Print(TextureRect2);
 
 		TextureRect1.Texture = background_image;
 		TextureRect2.Texture = background_image;

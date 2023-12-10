@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://btyxeqggdpou6"]
+
+[ext_resource type="Script" path="res://scripts/ScrollingBackground.cs" id="1_j4bdw"]
+[ext_resource type="Texture2D" uid="uid://dmowh8ykw8o0" path="res://assets/backgrounds/Blue Nebula 8 - 1024x1024.png" id="2_cx6nq"]
+
+[node name="ScrollingBackground" type="Node2D"]
+script = ExtResource("1_j4bdw")
+background_image = ExtResource("2_cx6nq")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+scroll_base_offset = Vector2(2.08165e-12, -1024)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground2/ParallaxLayer"]
+offset_right = 1024.0
+offset_bottom = 1024.0
+stretch_mode = 1
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_right = 1024.0
+offset_bottom = 1024.0
+stretch_mode = 1
