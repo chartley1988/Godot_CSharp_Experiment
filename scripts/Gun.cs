@@ -37,8 +37,6 @@ public partial class Gun : Node2D
 			await Task.Delay(300/frequency);
 			_cooldown = false;
 		}
-
-
 	}
 
 }

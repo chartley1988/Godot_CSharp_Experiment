@@ -18,8 +18,6 @@ public partial class Player : CharacterBody2D
 	private Sprite2D PlayerSprite;
 	private Vector2 Window;
 
-	
-
 	public override void _Ready()
 	{
 		PlayerSprite = (Sprite2D)GetNode("Sprite2D");
@@ -49,7 +47,6 @@ public partial class Player : CharacterBody2D
 		Vector2 spriteSize = PlayerSprite.Texture.GetSize();
 		Vector2 spriteScale = PlayerSprite.Scale;
 
-
 		if(direction != 0)
 		{
 			_velocity.X = Mathf.MoveToward
@@ -58,11 +55,8 @@ public partial class Player : CharacterBody2D
 				speed * direction,
 				acceleration/(float)delta
 			);
-
 		} 
-
 		else
-
 		{
 			_velocity.X = Mathf.MoveToward(_velocity.X, 0, friction/(float)delta);
 		}
@@ -76,6 +70,4 @@ public partial class Player : CharacterBody2D
 			Window.Y - (spriteSize.Y * spriteScale.Y))
 		);
 	}
-
-	
 }

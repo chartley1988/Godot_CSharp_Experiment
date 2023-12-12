@@ -4,9 +4,6 @@ using System;
 public partial class Bullet : CharacterBody2D
 {
 	int speed = 500;
-	
-	
-
 	private Vector2 Window;
 
 	// Called when the node enters the scene tree for the first time.
