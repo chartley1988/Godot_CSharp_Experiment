@@ -16,7 +16,6 @@ position = Vector2(0, 21)
 texture = ExtResource("2_lwfd0")
 metadata/_edit_lock_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Bullets"]]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_6nxp6")
-disabled = true
