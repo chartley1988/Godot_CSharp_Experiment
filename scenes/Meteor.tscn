@@ -1,13 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bh8q0p6ybfbjk"]
+[gd_scene load_steps=5 format=3 uid="uid://bh8q0p6ybfbjk"]
 
 [ext_resource type="Texture2D" uid="uid://deyswbepxbdcm" path="res://assets/sprites/meteors/meteorBrown_med3.png" id="1_75c88"]
 [ext_resource type="Script" path="res://scripts/Meteor.cs" id="1_wgdfs"]
+[ext_resource type="AudioStream" uid="uid://r34tu0hait04" path="res://assets/sounds/sfx_exp_short_hard15.wav" id="3_4d8w4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7ry02"]
 radius = 16.2788
 
 [node name="Meteor" type="CharacterBody2D"]
 script = ExtResource("1_wgdfs")
+sound_effect = ExtResource("3_4d8w4")
+pitch = 0.482
+variance = 0.367
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_75c88")

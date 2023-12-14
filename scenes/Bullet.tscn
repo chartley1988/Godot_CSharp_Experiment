@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cr146aqgvegpr"]
+[gd_scene load_steps=5 format=3 uid="uid://cr146aqgvegpr"]
 
 [ext_resource type="Script" path="res://scripts/Bullet.cs" id="1_njhf4"]
 [ext_resource type="Texture2D" uid="uid://bdbld3fbnr81a" path="res://assets/sprites/laserRed01.png" id="2_lwfd0"]
+[ext_resource type="AudioStream" uid="uid://cywk2ov8572v7" path="res://assets/sounds/sfx_wpn_laser8.wav" id="3_tbkob"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6nxp6"]
 size = Vector2(10, 10)
@@ -10,6 +11,9 @@ size = Vector2(10, 10)
 z_index = -1
 position = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("1_njhf4")
+sound_effect = ExtResource("3_tbkob")
+pitch = 0.553
+variance = 0.184
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 21)

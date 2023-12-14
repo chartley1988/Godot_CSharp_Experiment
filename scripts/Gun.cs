@@ -31,7 +31,8 @@ public partial class Gun : Node2D
 		if(_cooldown == false)
 		{
 			_cooldown = true;
-			var bullet_instance = (Node2D)bullet.Instantiate();
+			var bullet_instance = (Bullet)bullet.Instantiate();
+			bullet_instance.main = main;
 			bullet_instance.GlobalPosition = new Vector2(GlobalPosition.X, GlobalPosition.Y - 40);
 			main.AddChild(bullet_instance);
 			await Task.Delay(300/frequency);

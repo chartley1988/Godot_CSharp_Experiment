@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfps4qwk8igs"]
+
+[ext_resource type="AudioStream" uid="uid://cywk2ov8572v7" path="res://assets/sounds/sfx_wpn_laser8.wav" id="1_xvmk3"]
+[ext_resource type="Script" path="res://scripts/SoundEffect.cs" id="2_frhjw"]
+
+[node name="SoundEffect" type="AudioStreamPlayer"]
+stream = ExtResource("1_xvmk3")
+volume_db = -9.838
+pitch_scale = 0.5
+script = ExtResource("2_frhjw")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
